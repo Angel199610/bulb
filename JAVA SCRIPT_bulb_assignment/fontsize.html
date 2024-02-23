@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="gfg1"> 
+        <h1>My first Java script</h1> 
+        <p> 
+            Java script is the best programming language and its very easy to learn used for creating interactive websites
+        </p> 
+    </div> 
+    <label for="gfg">Select font size:</label><br> 
+    <select id="gfg"><br> 
+        <option value="small">Small</option> 
+        <option value="medium">Medium</option> 
+        <option value="large">Large</option> 
+    </select> 
+    <script> 
+        const selectFontSize =  
+            document.getElementById("gfg"); 
+  
+        const updateElement =  
+            document.getElementById("gfg1"); 
+  
+        const fontSizes = { 
+            small: "12px", 
+            medium: "20px", 
+            large: "40px", 
+        }; 
+  
+        selectFontSize.addEventListener("change",  
+        function () { 
+            const valueSelect = selectFontSize.value; 
+            updateElement.style.fontSize  
+                = fontSizes[valueSelect]; 
+        }); 
+    </script> 
+</head> 
+</body>
+</html>
